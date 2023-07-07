@@ -13,3 +13,11 @@ Jupyter notebook widget to annotate text.
 - Multiple annotation classes.
 - Handles data which has already being annotated. Option to filter annotated data and keep untouched.
 
+
+## Annotation
+
+![annotator](txtanot_annotator.png)
+
+## Similarity 
+
+![similarity](txtanot_similarity.png)
