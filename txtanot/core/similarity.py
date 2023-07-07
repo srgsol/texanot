@@ -1,3 +1,6 @@
+"""
+This module contains similarity index functionality.
+"""
 import pandas as pd
 import torch
 from transformers import AutoTokenizer, AutoModel
@@ -8,7 +11,6 @@ class SimilarityEngine:
     def __init__(self, checkpoint):
         self.tokenizer = AutoTokenizer.from_pretrained(checkpoint)
         self.model = AutoModel.from_pretrained(checkpoint)
-        # self.candidates_dataset = None
         self.embeddings_dataset = None
         
     def cls_pooling(self, model_output):
@@ -41,7 +43,3 @@ class SimilarityEngine:
     def load(self, df, colname, filename):
         self.embeddings_dataset = Dataset.from_pandas(pd.DataFrame(df))
         self.embeddings_dataset.load_faiss_index(colname, filename)
-
-# class IndexLoader:
-#     def __init__(self, df: pd.DataFrame):
-#         index_dataset = Dataset.from_pandas(pd.DataFrame(df))
