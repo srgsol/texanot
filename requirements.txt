@@ -1,0 +1,15 @@
+#
+# In Amazon EC2 do the following steps to build a dev environment:
+#   - conda create --name env_name
+#   - conda activate env_name
+#   - conda install python==3.9
+#   - conda install pip
+#   - pip install pandas transformers datasets ipython jupyterlab matplotlib scikit-learn
+
+pandas
+transformers
+datasets
+torch
+jupyterlab
+ipywidgets
+faiss-cpu
