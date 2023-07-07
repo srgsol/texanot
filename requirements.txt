@@ -10,6 +10,7 @@ pandas
 transformers
 datasets
 torch
+ipython
 jupyterlab
 ipywidgets
 faiss-cpu
